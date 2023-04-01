@@ -11,7 +11,7 @@ public interface Pile {
 	
 	
 	
-	public boolean EmptyStack();
+	public boolean isEmpty();
 	
 	public Object head() throws EmptyStackException;
 

@@ -22,7 +22,7 @@ public class PileParTableau implements Pile {
 	}
 	
 	public Object unStack()throws EmptyStackException{
-		if(EmptyStack())
+		if(isEmpty())
 			throw new EmptyStackException();
 		Object temp = array[head--];
 		return temp;
@@ -31,7 +31,7 @@ public class PileParTableau implements Pile {
 	public boolean isEmpty() {return (head == -1);}
 	
 	public Object head() throws EmptyStackException {
-		if(EmptyStack())
+		if(isEmpty())
 			throw new EmptyStackException();
 		return array[head];
 	}

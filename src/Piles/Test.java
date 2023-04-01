@@ -11,7 +11,7 @@ public class Test {
 			System.out.println(pile.unStack());
 			System.out.println(pile.head());
 			pile.delete();
-			System.out.println(pile.EmptyStack());
+			System.out.println(pile.isEmpty());
 			}catch(FullStackException | EmptyStackException e) {
 				e.printStackTrace();
 			}

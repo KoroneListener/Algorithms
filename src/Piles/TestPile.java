@@ -3,7 +3,7 @@ package Piles;
 import Piles.*;
 
 public class TestPile {
-    public static void goThrough(PileParTableau p) {
+    public static void goThrough(PileParTableau p) throws EmptyStackException {
         PileParTableau temp = null;
         temp = p.copier();
 
@@ -33,7 +33,7 @@ public class TestPile {
                 System.out.println("\nThe Stack p is empty");
             else
                 System.out.println("\nThe Stack p is not empty");
-        } catch (FullStackException | EmptyStackException e) {
+        } catch (FullStackException |EmptyStackException e) {
             e.printStackTrace();
         }
     }
