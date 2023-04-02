@@ -1,6 +1,5 @@
 package Piles;
 
-import Piles.*;
 
 public class TestPile {
     public static void goThrough(PileParTableau p) throws EmptyStackException {
@@ -18,7 +17,7 @@ public class TestPile {
             PileParTableau p = new PileParTableau(10);
 
             for (int i = 0; i < 5; i++) {
-                p.stack(new Integer(i));
+                p.stack(Integer.valueOf(i));
             }
             System.out.println("\n--- Show stack p: ");
             goThrough(p);
